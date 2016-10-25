@@ -47,7 +47,7 @@
 
 ## 开源项目
  - [weex 实现一个采购系统](https://github.com/emptywalker/PurchasingPlatform)  局部功能
- - [CollectionView 实现大小宫格切花](https://github.com/emptywalker/XYHCollectionViewLayout)
+ - [CollectionView 实现大小宫格切换](https://github.com/emptywalker/XYHCollectionViewLayout)
 
 
 ---
