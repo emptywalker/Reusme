@@ -1,8 +1,7 @@
 
 
 # 联系方式
-
-- 手机：18226987542 
+- 手机：18226987542       
 - Email：emptywalker@163.com 
 
 ---
@@ -10,7 +9,7 @@
 # 个人信息
  - 姓名：许有红
  - 学历：本科/计算机科学与技术专业 
- - 工作年限：2年
+ - 工作年限：近2年
  - 微博：[@EmptyWalker](http://weibo.com/2607816371/profile?rightmod=1&wvr=6&mod=personinfo)
  - [Github]( https://github.com/emptywalker )
  - [简书](http://www.jianshu.com/users/14857ca34ed8/latest_articles)
@@ -26,15 +25,26 @@
 土冒APP早起是由我独立完成开发和上架的。后期加入两个小伙伴一起开发，我被担任小组长。在此项目中，我主要完成的工作如下：
 
 - 引入cocoapods进行第三方的管理
-- AFNetworking进行二次封装，使用自己的数据模型对AF进行封装，避免AF更新之后，需要整个项目替换代码
-- 创建pch文件，当时使用Xcode6.x，创建项目已经不带pch文件了
-- 引入SDWebImage、MJExtension、MJRefresh
-- 封装好FMDB的新建表、增、删、改、查
-- 对项目的目录进行模块化，当时按照MVC的设计模式，后来发现模块粒度划分太大，又对模块进行了颗粒化
-- 15年9月，加入两个小伙伴，我主要负责购物车、商品展示模块、购买流程、订单管理的开发和维护；然后一起探讨项目框架的搭建、工具选择、代码封装、代码规范等。
-- 15年12月，公司提升我为iOS组leader（T3），我的工作除了之前还多了项目分工、进度管理、代码审查。
-- 今年做了一点H5的东西，完成公司主页在手机端的H5工程
 
+- AFNetworking进行二次封装，使用自己的数据模型对AF进行封装，避免AF更新之后，需要整个项目替换代码
+
+- 创建pch文件，当时使用Xcode6.x，创建项目已经不带pch文件
+
+- 引入SDWebImage、MJExtension、MJRefresh
+
+- 封装好FMDB的新建表、增、删、改、查
+
+- 对项目的目录进行模块化，当时按照MVC的设计模式，后来发现模块粒度划分太大，又对模块进行了颗粒化
+
+- 15年9月，加入两个小伙伴，我主要负责购物车、商品展示模块、购买流程、订单管理的开发和维护；然后一起探讨项目框架的搭建、工具选择、代码封装、代码规范等。
+
+- 15年12月，公司提升我为iOS组leader（T3），我的工作除了之前还多了项目分工、进度管理、代码审查。
+
+- 今年做了一点H5的东西，完成公司主页在手机端的H5工程  
+
+
+### weex的学习    
+因为公司希望快速迭代开发，节约成本，我在5月份对weex进行了一小部分的学习，并实现了[一个小项目](https://github.com/emptywalker/PurchasingPlatform).对weex的常用组件，和基本实现有了一定的了解。
 
 ---
 
@@ -44,13 +54,13 @@
 - [土冒手机web主页](https://www.toomao.com) 手机端H5
 - [GitHub](https://github.com/emptywalker)
 
-
 ## 开源项目
  - [weex 实现一个采购系统](https://github.com/emptywalker/PurchasingPlatform)  局部功能
  - [CollectionView 实现大小宫格切换](https://github.com/emptywalker/XYHCollectionViewLayout)
-
-
+ 
 ---
 
 # 致谢
 感谢您花时间阅读我的简历，期待能有机会和您共事。
+
+
