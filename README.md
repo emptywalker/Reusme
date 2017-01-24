@@ -9,13 +9,26 @@
 ## 个人信息
  - 姓名：许有红
  - 学历：本科/计算机科学与技术专业 
- - 工作年限：近2年
+ - 毕业时间：2015/6
  - 微博：[@EmptyWalker](http://weibo.com/2607816371/profile?rightmod=1&wvr=6&mod=personinfo)
  - [Github]( https://github.com/emptywalker )
  - [简书](http://www.jianshu.com/users/14857ca34ed8/latest_articles)
  - [博客](https://emptywalker.github.io) (不经常使用)
 
 ---
+## 我的技能：
+### Objective-C
+- 了解`GCD`、`NSOperation`的基本思想和使用
+- 了解`runtime`的基本知识，其动态化过程，并使用`runtime`实现过项目中的`AOP`埋点
+- 对面向协议和工厂模式有基本的理解和使用
+
+
+###  H5 + WEEX
+- 对web的`html`、`css`、`javascript`，基本了解，并能够实际运用，使用`H5`开发过公司的[手机主页](https://www.toomao.com)
+- 对`weex`的持续学习研究，能够熟练的运用`weex` +  组件化，开发高性能的复杂页面，能够保证三端一致。经不断测试，证明`weex`可以替换项目中的所有`h5`页面，更甚者，可以直接用来开发项目，目前已在项目中使用，后期会大范围使用weex进行业务开发,这是一个[weex 实现的demo](https://github.com/emptywalker/PurchasingPlatform)
+
+### Swift
+学习完了`《The Swift Programming Language》`3.0.1版本内容，基本完成了`swift3.0`的入门,并且长期关注`swift`的动态,多次参与`Swift GG`线下沙龙，拥抱`RxSwift`.
 
 ## 工作经历
 
@@ -35,7 +48,6 @@
 - 15年12月，公司提升我为iOS组leader（T3），我的工作除了之前还多了项目分工、进度管理、代码审查。
 
 - 16年做了一点H5的东西,主要学习了`Html、CSS、JavaScript`的基本语法，并完成公司主页在手机端的H5工程，在`APP`中接入`weex`，并继续维护和开发`APP`
-
 
 总结：学习了很多疑难问题的`debug`，比如对`thread 1:exc_bad_access(code=1,adress=0x10)`问题的[定位和解决](http://www.jianshu.com/p/1ac9e1eec918), 使用`Instruments`检测内存泄露和UI等问题, 还有对上传`iTunes Connect`审核的[总结](http://www.jianshu.com/notebooks/6353441/latest)
 
