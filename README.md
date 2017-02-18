@@ -18,7 +18,7 @@
 ---
 ## 我的技能：
 ### Objective-C
-- 了解`GCD`、`NSOperation`的基本思想和使用
+- 比较了解`GCD`、`NSOperation`的基本思想和使用
 - 了解`runtime`的基本知识，其动态化过程，并使用`runtime`实现过项目中的`AOP`埋点
 - 对面向协议和工厂模式有基本的理解和使用
 
