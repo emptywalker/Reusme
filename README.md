@@ -20,13 +20,13 @@
 ### 2017-01 ~ 至今 (浙江蓝麦电子商务股份有限公司)
    
 
-- 使用[WEEX](https://github.com/apache/incubator-weex)从新开发[土冒](https://itunes.apple.com/us/app/土冒-最挑剔的特产选品师/id965720144?mt=8)APP，并和团队一起最终完成Android、iOS、H5的三端公用。在移动客户端，可以通过下发js文件的形式，实现热更新，对于客户端来说，也省去从新提交审核的过程。Weex项目上线之后，极大的提高了开发效率，极大降低了开发成本。
+- 使用[WEEX](https://github.com/apache/incubator-weex)重构[土冒](https://itunes.apple.com/us/app/土冒-最挑剔的特产选品师/id965720144?mt=8)APP，并和团队一起最终完成Android、iOS、H5的三端公用，移动端都已上线。效果：在移动客户端，可以通过下发js文件的形式，实现热更新，省去了应用市场的审核过程，极大的提高了开发效率，降低了开发成本。
 - 在Weex化的过程中，我主要负责：
 
-	- Weex层面的开发，通过webpack管理项目，完成原客户端90%以上的页面开发，通过与native的提供的module/component相结合，完成拍照、获取相册图片、第三方登录、支付、分享、控制页面跳转、实例传值、webView交互等交互内容，完成对Android端UI的适配；
-	- iOS端的所有处理：自定义组件、模块、全局事件的实现、对js文件的更新缓存等；
+	- Weex层面的开发，通过webpack管理项目，完成原客户端90%以上的页面开发，通过与native的提供的module/component相结合，完成拍照、获取相册图片、第三方登录、支付、分享、控制页面跳转、实例传值、webView交互等内容，完成对Android端UI的适配；
+	- iOS端的处理所有自定义组件、模块、全局事件的实现、对js文件的更新缓存等；
 	
-	- 在开发过程中，为了更大增加兼容性(.we的文件在H5会有兼容性问题)，我们完成了从.we文件过渡到.vue文件。在这个过程中，除了使用官方的工具进行了转换，还自己添加一个特定的修改。对.vue中弃用的两个功能的进行手动替换：
+	- 在开发过程中，为了更大增加兼容性(.we的文件在H5会有兼容性问题)，我们完成了从.we文件过渡到.vue文件。在这个过程中，除了使用官方的工具进行了转换，还自己添加一些特定的修改。对.vue中弃用的两个功能进行了手动替换：
 		- dispatch组件传值手动换成@method=method形式的传值方式；
 		- BroadcastChannel替换成GlobalEvent进行实例传值，在iOS和Android实现这个功能都需要原生的支持，并且对官方提供的方法进行了修改。为此我还写了[一篇文章](http://www.jianshu.com/p/d17b83c1f873)关于这个过程在iOS的实现；
 		- 对Android做适配。
@@ -59,7 +59,7 @@
 	- 比较了解GCD、NSOperation的基本思想和使用
 	- 了解runtime的基本知识，其动态化过程，并使用runtime实现过项目中的AOP埋点
 	- 对面向协议和工厂模式有基本的理解和使用，对设计模式看法是：适合当前业务的就是最好的
-	- 阅读过部分AFNetWorking、weex的源码
+	- 阅读过AFNetWorking、weex的部分源码
 
 
 -  H5 + WEEX + Vue
@@ -69,12 +69,12 @@
 
 - Swift
 	- 学习完了《The Swift Programming Language》3.0.1版本内容，基本完成了swift3.0的入门,并且关注swift的动态,多次参与Swift GG线下沙龙，拥抱RxSwift.
-- 英语(CET-4),习惯于google、stockoverflow、raywenderlick、自带梯子；阅读过《iOS Apprentice》部分章节的英文书籍， 
+- 英语(CET-4),习惯于google、stackoverflow、raywenderlick、自带梯子；阅读过《iOS Apprentice》部分章节的英文书籍， 
 
 
 
 
-## 开源项目和作品
+## 作品展示和开源项目
 ### 作品展示
 - [土冒](https://itunes.apple.com/cn/app/tu-mao-jin-kou-ling-shi-%20gou/id965720144?mt=8)
 - [土冒手机web主页](https://www.toomao.com) 手机端H5
