@@ -1,74 +1,78 @@
 
 
-## 联系方式
-- 手机：18226987542       
+
+
+
+---
+## 基本信息
+- 昵称：EmptyWalker            
 - Email：emptywalker@163.com 
+- 毕业院校：池州学院（2015/5）
+- 学历：本科
+- 微博：[@EmptyWalker](http://weibo.com/2607816371/profile?rightmod=1&wvr=6&mod=personinfo)
+- Twitter: [EmptyWalker](https://twitter.com/EmptyWalkMan)
+- [Github]( https://github.com/emptywalker )、 [简书](http://www.jianshu.com/users/14857ca34ed8/latest_articles)、 [博客](https://emptywalker.github.io)
+
 
 ---
 
-## 个人信息
- - 姓名：许有红
- - 学历：本科/计算机科学与技术专业 
- - 毕业时间：2015/6
- - 微博：[@EmptyWalker](http://weibo.com/2607816371/profile?rightmod=1&wvr=6&mod=personinfo)
- - [Github]( https://github.com/emptywalker )
- - [简书](http://www.jianshu.com/users/14857ca34ed8/latest_articles)
- - [博客](https://emptywalker.github.io) (不经常使用)
+## 项目经历
+### 2017-01 ~ 至今 (浙江蓝麦电子商务股份有限公司)
+   
+
+- 使用[WEEX](https://github.com/apache/incubator-weex)从新开发[土冒](https://itunes.apple.com/us/app/土冒-最挑剔的特产选品师/id965720144?mt=8)APP，并和团队一起最终完成Android、iOS、H5的三端公用。在移动客户端，可以通过下发js文件的形式，实现热更新，对于客户端来说，也省去从新提交审核的过程。Weex项目上线之后，极大的提高了开发效率，极大降低了开发成本。
+- 在Weex化的过程中，我主要负责：
+
+	- Weex层面的开发，通过webpack管理项目，完成原客户端90%以上的页面开发，通过与native的提供的module/component相结合，完成拍照、获取相册图片、第三方登录、支付、分享、控制页面跳转、实例传值、webView交互等交互内容，完成对Android端UI的适配；
+	- iOS端的所有处理：自定义组件、模块、全局事件的实现、对js文件的更新缓存等；
+	
+	- 在开发过程中，为了更大增加兼容性(.we的文件在H5会有兼容性问题)，我们完成了从.we文件过渡到.vue文件。在这个过程中，除了使用官方的工具进行了转换，还自己添加一个特定的修改。对.vue中弃用的两个功能的进行手动替换：
+		- dispatch组件传值手动换成@method=method形式的传值方式；
+		- BroadcastChannel替换成GlobalEvent进行实例传值，在iOS和Android实现这个功能都需要原生的支持，并且对官方提供的方法进行了修改。为此我还写了[一篇文章](http://www.jianshu.com/p/d17b83c1f873)关于这个过程在iOS的实现；
+		- 对Android做适配。
+	- 活跃于[weex中文社区](https://segmentfault.com/t/weex)，目前标签下[声望排名第三](https://segmentfault.com/u/xlihey)。
+		
+
+### 2016-06 ~ 2017-01 (浙江蓝麦电子商务股份有限公司)
+- 接触前端开发，了解一下Html、CSS、JavaScript，完成公司[手机主页](htts://www.toomao.com)的开发。
+- weex开源了，开始研究weex的框架，从playground入手对每个组件进行学习尝试，并在之后将手机主页使用weex开发从新上线。这是第一次尝试weex的实战场景。在经过一段时间的深入学习之后，发现weex具有满足我们现有APP开发的技术条件后，着手准备将现有APP转成weex，从而达到降低开发成本，提高开发效率的目的
+- 维护iOS端的更新与日常开发
+
+### 2015-05 ~ 2016-06 (浙江蓝麦电子商务股份有限公司)
+
+- 从0-1搭建土冒iOS客户端，根据业务模块对项目进行基本的构建，模块内部采用MVC的设计模式，引入cocoapods对第三方库进行依赖管理，对相关第三方进行第二层封装，有效避免了第三方api变更带来的巨大灾难，写好用户数据缓存类、导航的设置、网络请求；
+
+- 在中期开发人员增多的情况下，和团队一起制定编码规范，项目框架的修改。探索常见的crash类型和调试方法，如：
+	- EXC_CRASH unrecognized selector 采用 All Exception Point
+	- SIGSEGV、 EXC_BAD_ACCESS 采用 NSZombie
+	- SIGABRT 出现次数比较少，通过代码的逻辑检查
+	
+- 在团队中愿意接受挑战，去完成一些有难度的任务，如：接受购物车、确认订单、支付、店铺详情、商家管理等模块的开发；
+
+- 帮助团队解决一些偶发性错误。比如：由于tabbleView的cellForRowAtIndexPath的异步调用，在一些数据经常变化的页面中，会偶尔出现数组越界，因此对这样的数组在每次获取值得时候进行安全检查，必要时采用线程安全组数。
+- 使用instruments对项目进行检测，及时发现一写内存泄漏、野指针、耗时的操作
 
 ---
+
 ## 我的技能：
-### Objective-C
-- 比较了解`GCD`、`NSOperation`的基本思想和使用
-- 了解`runtime`的基本知识，其动态化过程，并使用`runtime`实现过项目中的`AOP`埋点
-- 对面向协议和工厂模式有基本的理解和使用
+- Objective-C
+	- 比较了解GCD、NSOperation的基本思想和使用
+	- 了解runtime的基本知识，其动态化过程，并使用runtime实现过项目中的AOP埋点
+	- 对面向协议和工厂模式有基本的理解和使用，对设计模式看法是：适合当前业务的就是最好的
+	- 阅读过部分AFNetWorking、weex的源码
 
 
-###  H5 + WEEX
-- 对web的`html`、`css`、`javascript`，基本了解，并能够实际运用，使用`H5`开发过公司的[手机主页](https://www.toomao.com)
-- 对`weex`的持续学习研究，能够熟练的运用`weex` +  组件化，开发高性能的复杂页面，能够保证三端一致。经不断测试，证明`weex`可以替换项目中的所有`h5`页面，更甚者，可以直接用来开发项目，目前已在项目中使用，后期会大范围使用weex进行业务开发,这是一个[weex 实现的demo](https://github.com/emptywalker/PurchasingPlatform)
+-  H5 + WEEX + Vue
+	- 对web的html、CSS、JavaScript，基本了解，并能够实际运用，使用H5开发过公司的[手机主页](https://www.toomao.com)
+	- 熟悉使用weex进行项目开发。已经上线纯weex的商业级项目 土冒APP。对weex的使用态度：建议局部动态页面使用weex来替换webViwe，从而增强交互体验。全部使用weex在Android上回出现很大性能问题：OOM、卡顿。
+	- 因为weex的开发需要，对Vue有一些入门的了解
 
-### Swift
-学习完了`《The Swift Programming Language》`3.0.1版本内容，基本完成了`swift3.0`的入门,并且长期关注`swift`的动态,多次参与`Swift GG`线下沙龙，拥抱`RxSwift`.
+- Swift
+	- 学习完了《The Swift Programming Language》3.0.1版本内容，基本完成了swift3.0的入门,并且关注swift的动态,多次参与Swift GG线下沙龙，拥抱RxSwift.
+- 英语(CET-4),习惯于google、stockoverflow、raywenderlick、自带梯子；阅读过《iOS Apprentice》部分章节的英文书籍， 
 
-## 工作经历
 
-### 浙江蓝麦电子商务股份有限公司（ 2015年5月 ~ 至今 ）
 
-### 土冒 APP
-土冒APP早起是由我独立完成开发和上架的，属于一个电商平台。后期加入两个小伙伴一起开发，我被担任小组长。在此项目中，我主要完成的工作如下：
-
-- 引入`cocoapods`进行第三方的管理，同时引入了很多便利的第三方工具，协助搭建基本框架
-
-- `AFNetworking`进行二次封装，使用自己的数据模型对AF进行封装，避免AF更新之后，需要整个项目替换代码，适配`https`；封装好`FMDB`的新建表、增、删、改、查
-
-- 对项目的目录进行模块化，当时按照`MVC`的设计模式，后来发现模块粒度划分太大，又对模块进行了颗粒化
-
-- 15年9月，加入两个小伙伴，我主要负责购物车、商品展示模块、购买流程、订单管理的开发和维护；然后一起探讨项目框架的搭建、工具选择、代码封装、代码规范等。
-
-- 15年12月，公司提升我为iOS组leader（T3），我的工作除了之前还多了项目分工、进度管理、代码审查。
-
-- 16年做了一点H5的东西,主要学习了`Html、CSS、JavaScript`的基本语法，并完成公司主页在手机端的H5工程，在`APP`中接入`weex`，并继续维护和开发`APP`
-
-总结：学习了很多疑难问题的`debug`，比如对`thread 1:exc_bad_access(code=1,adress=0x10)`问题的[定位和解决](http://www.jianshu.com/p/1ac9e1eec918), 使用`Instruments`检测内存泄露和UI等问题, 还有对上传`iTunes Connect`审核的[总结](http://www.jianshu.com/notebooks/6353441/latest)
-
----
-
-### 嵌入`Weex`--强化`Hybrid`    
-因为公司希望快速迭代开发，节约成本，改善之前`APP`中使用`H5`带来的交互体验问题，我在5月份对weex进行了比较深入的学习，这是学习过程中实现[一个小项目](https://github.com/emptywalker/PurchasingPlatform)，并在实际开发中[总结一些经验](http://www.jianshu.com/notebooks/5586491/latest)。目前我对weex的基本语法可以熟练使用，并在实际项目中穿插使用了，并实现了`iOS`端，对`weex`文件的缓存处理和版本控制。主要理解以下几点：
-
-* weex的基本结构,包括`<template>`、`<style>`、`<script>`,以及内部的基本实现要求
-* 对weex进行组件化封装，相互引用
-* 在渲染的时候，利用`repeat`和`if`语法，实现动态化，由于weex基于`Vue`的，所以都是属于`MVVM`模式，已经实现了响应式的编程，所以在UI刷新的时候，只需改变数据就会自动更新UI
-* weex调用native可以使用register`module`形式来实现
-
-对weex的使用感受是：上手简单，对于一个移动端出身的人，可以很快熟悉它的基本结构，搭建出自己想要的效果，但是其相关配置是基于前端了，非前端开发者有些很难理解，debug也不太方便； 对于电商类的应用很合适（目前不支持横屏），开发速度很快。
-
----
-
-### Swift的学习
-在12月份看完了《The Swift Programming Language》3.0.1版本内容，也将其中的75%以上的代码自己实现了一遍，这里是[相关代码](https://github.com/emptywalker/Swift-Language-Program-3.git)，目前已经可以入门，加上有将近两年`Objective-C`的经验，可以完成基本的`Swift`的开发任务,并可以快速成长。
-
----
 
 ## 开源项目和作品
 ### 作品展示
@@ -79,6 +83,7 @@
 ### 开源项目
  - [weex 实现一个采购系统](https://github.com/emptywalker/PurchasingPlatform)  局部功能
  - [CollectionView 实现大小宫格切换](https://github.com/emptywalker/XYHCollectionViewLayout)
+ - 对weex项目提交过关于导航控制器的[PR](https://github.com/apache/incubator-weex/pull/267)
  
 ---
 
