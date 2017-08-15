@@ -9,8 +9,8 @@
 - Email：emptywalker@163.com 
 - 毕业院校：池州学院（2015/5）
 - 学历：本科
-- 微博：[@EmptyWalker](http://weibo.com/2607816371/profile?rightmod=1&wvr=6&mod=personinfo)
-- Twitter: [EmptyWalker](https://twitter.com/EmptyWalkMan)
+- 电话：18226987542
+- [微博@EmptyWalker](http://weibo.com/2607816371/profile?rightmod=1&wvr=6&mod=personinfo)、[Twitter@EmptyWalker](https://twitter.com/EmptyWalkMan)
 - [Github]( https://github.com/emptywalker )、 [简书](http://www.jianshu.com/users/14857ca34ed8/latest_articles)、 [博客](https://emptywalker.github.io)
 
 
@@ -24,7 +24,7 @@
 - 在Weex化的过程中，我主要负责：
 
 	- Weex层面的开发，通过webpack管理项目，完成原客户端90%以上的页面开发，通过与native的提供的module/component相结合，完成拍照、获取相册图片、第三方登录、支付、分享、控制页面跳转、实例传值、webView交互等内容，完成对Android端UI的适配；
-	- iOS端的处理所有自定义组件、模块、全局事件的实现、对js文件的更新缓存等；
+	- iOS端处理所有自定义组件、模块、全局事件的实现、对js文件的更新缓存等；
 	
 	- 在开发过程中，为了更大增加兼容性(.we的文件在H5会有兼容性问题)，我们完成了从.we文件过渡到.vue文件。在这个过程中，除了使用官方的工具进行了转换，还自己添加一些特定的修改。对.vue中弃用的两个功能进行了手动替换：
 		- dispatch组件传值手动换成@method=method形式的传值方式；
