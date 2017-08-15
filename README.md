@@ -82,7 +82,6 @@
 
 ### 开源项目
  - [weex 实现一个采购系统](https://github.com/emptywalker/PurchasingPlatform)  局部功能
- - [CollectionView 实现大小宫格切换](https://github.com/emptywalker/XYHCollectionViewLayout)
  - 对weex项目提交过关于导航控制器的[PR](https://github.com/apache/incubator-weex/pull/267)
  
 ---
