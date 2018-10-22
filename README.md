@@ -5,84 +5,60 @@
 
 ---
 ## 基本信息
-- 昵称：EmptyWalker            
-- Email：emptywalker@163.com 
-- 毕业院校：池州学院（2015/5）
-- 学历：本科
-- 电话：18226987542
-- [微博@EmptyWalker](http://weibo.com/2607816371/profile?rightmod=1&wvr=6&mod=personinfo)、[Twitter@EmptyWalker](https://twitter.com/EmptyWalkMan)
-- [Github]( https://github.com/emptywalker )、 [简书](http://www.jianshu.com/users/14857ca34ed8/latest_articles)、 [博客](https://emptywalker.github.io)
+ 姓名：  | Email： | 电话：| 
+| :------:| :------: | :------: | :------: |  :------: |
+| 许有红| emptywalker@163.com | 18226987542 | 池州学院（2015-05） |  本科 |
 
+ 毕业院校：  | 毕业时间： | 学历：| 其它 |
+| :------:| :------: | :------: | :-----: |
+| 池州学院| 2015-05 | 本科 | [Github]( https://github.com/emptywalker )、[博客](https://emptywalker.github.io)、 [简书](http://www.jianshu.com/users/14857ca34ed8/latest_articles) |
 
 ---
 
 ## 项目经历
-### 2017-01 ~ 至今 (浙江蓝麦电子商务股份有限公司)
-   
+### 2015-05 ~ 2017-09 (浙江蓝麦电子商务股份有限公司)
+主要完成一个电商平台的[ APP 土冒](https://itunes.apple.com/cn/app/tu-mao-yi-ge-te-chan-yi-ge-gu-shi/id965720144)，其主涉及的业务模块是首页、分类、商品列表展示、活动商品展示、商品详情、购物车、确认订单、会员、券管理、支付、订单管理、退款处理、退款纠纷处理、物流显示、订单评价等。 iOS 的同事从 1-4-1。从个人技术发展角度，我的工作分为以下两个阶段：
 
-- 使用[WEEX](https://github.com/apache/incubator-weex)重构[土冒](https://itunes.apple.com/us/app/土冒-最挑剔的特产选品师/id965720144?mt=8)APP，并和团队一起最终完成Android、iOS、H5的三端公用，移动端都已上线。效果：在移动客户端，可以通过下发js文件的形式，实现热更新，省去了应用市场的审核过程，极大的提高了开发效率，降低了开发成本。
-- 在Weex化的过程中，我主要负责：
+**2016-12 之前**
 
-	- Weex层面的开发，通过webpack管理项目，完成原客户端90%以上的页面开发，通过与native的提供的module/component相结合，完成拍照、获取相册图片、第三方登录、支付、分享、控制页面跳转、实例传值、webView交互等内容，完成对Android端UI的适配；
-	- iOS端处理所有自定义组件、模块、全局事件的实现、对js文件的更新缓存等；
-	
-	- 在开发过程中，为了更大增加兼容性(.we的文件在H5会有兼容性问题)，我们完成了从.we文件过渡到.vue文件。在这个过程中，除了使用官方的工具进行了转换，还自己添加一些特定的修改。对.vue中弃用的两个功能进行了手动替换：
-		- dispatch组件传值手动换成@method=method形式的传值方式；
-		- BroadcastChannel替换成GlobalEvent进行实例传值，在iOS和Android实现这个功能都需要原生的支持，并且对官方提供的方法进行了修改。为此我还写了[一篇文章](http://www.jianshu.com/p/d17b83c1f873)关于这个过程在iOS的实现；
-		- 对Android做适配。
-	- 活跃于[weex中文社区](https://segmentfault.com/t/weex)，目前标签下[声望排名第三](https://segmentfault.com/u/xlihey)。
+- 上线 土冒 APP，完成前两个版本的迭代，搭建基础架构。
+- 然后和新的小伙伴一起完成 APP 的架构调整，使其完全遵循 MVC 模式。并独立封装了网络库、缓存机制、JSON 到 Objective-C 对象的转换、颜色分类、字符处理、利用 CocoaPods 管理第三方依赖等；并一起制定代码规范，并形成文档，包括项目的新手教程。
+- 优化 TableView 滑动卡顿的问题，寻找减少卡顿的主要方式： cell 的高度预计算，减少 cell 布局更新，减少 Image 的离屏渲染。
+
+**2016-12 ~ 2017-09**
+- 随着 [Weex](https://github.com/apache/incubator-weex) 的内测开始，我开始学习 Weex，以公司的已有业务作为 Demo 去学习，探索 Weex 在项目中能否提供有效的价值。经过多个页面研究之后，在 Weex 宣布开源之后，开始在线上实现了一个简单的业务页面，并能满足线上需求。
+- 第二阶段，开始着手多页面，和对需要动态页面( H5 )进行替换。对 Weex 基础模块和组件进行搭建，比如:对 storage 增加同步取值的方法，硬件的能力获取（拍照、三方登录、分享、支付等）， Android 里由于图片造成的 OOM 进行优化，BundleJs 的更新缓存机制的搭建等。
+- 第三阶段，全部使用 Weex 翻写整个 APP，这一过程中，由于将 Weex 原本的 `.we` 转成 `.vue` 的过程中出现了一些问题，[总结在这里](https://www.jianshu.com/p/d17b83c1f873)。
+- 在 Weex 学习的过程，活跃于[ Weex 中文社区](https://segmentfault.com/t/weex)，目前标签下[声望排名第四](https://segmentfault.com/u/xlihey)；积极参与 WeexConf；并给 Weex 仓库提交过多个 [PR](https://github.com/apache/incubator-weex/commits?author=emptywalker)。
 		
 
-### 2016-06 ~ 2017-01 (浙江蓝麦电子商务股份有限公司)
-- 接触前端开发，了解一下Html、CSS、JavaScript，完成公司[手机主页](htts://www.toomao.com)的开发。
-- weex开源了，开始研究weex的框架，从playground入手对每个组件进行学习尝试，并在之后将手机主页使用weex开发从新上线。这是第一次尝试weex的实战场景。在经过一段时间的深入学习之后，发现weex具有满足我们现有APP开发的技术条件后，着手准备将现有APP转成weex，从而达到降低开发成本，提高开发效率的目的
-- 维护iOS端的更新与日常开发
+### 2017-09 ~ 2017-12 (杭州云若网络科技有限公司)
+从事[达人店 APP](https://itunes.apple.com/cn/app/id1123389168) 的开发维护。主要也是基于 Weex 完成多端的开发，大致工作内容如下：
+- 清理当前项目的废弃代码，使文件结构更加清晰，总结 git 分支管理规范，新手教程等文档；
+- 在现在 Weex 架构基础上，增加可以多个页面同时调试，极大的提高了页面联调的效率；
+- 实现了一个基础版本的埋点机制，利用 runtime hook 按钮的点击事件，并生成一个特定的数据结构(包含设备平台信息、网络状态、事件名称、来源)，完成数据收集，在 APP 进入前台或者进入后台的时候上传收集的点击事件，也可以对特定事件进行收集。
+- 开朗的性格给团队带来不少活力，多次主持周会加强了同事之间的友谊，有利于后续工作的高效合作。
 
-### 2015-05 ~ 2016-06 (浙江蓝麦电子商务股份有限公司)
-
-- 从0-1搭建土冒iOS客户端，根据业务模块对项目进行基本的构建，模块内部采用MVC的设计模式，引入cocoapods对第三方库进行依赖管理，对相关第三方进行第二层封装，有效避免了第三方api变更带来的巨大灾难，写好用户数据缓存类、导航的设置、网络请求；
-
-- 在中期开发人员增多的情况下，和团队一起制定编码规范，项目框架的修改。探索常见的crash类型和调试方法，如：
-	- EXC_CRASH unrecognized selector 采用 All Exception Point
-	- SIGSEGV、 EXC_BAD_ACCESS 采用 NSZombie
-	- SIGABRT 出现次数比较少，通过代码的逻辑检查
-	
-- 在团队中愿意接受挑战，去完成一些有难度的任务，如：接受购物车、确认订单、支付、店铺详情、商家管理等模块的开发；
-
-- 帮助团队解决一些偶发性错误。比如：由于tabbleView的cellForRowAtIndexPath的异步调用，在一些数据经常变化的页面中，会偶尔出现数组越界，因此对这样的数组在每次获取值得时候进行安全检查，必要时采用线程安全组数。
-- 使用instruments对项目进行检测，及时发现一写内存泄漏、野指针、耗时的操作
-
----
+### 2017-12 ~ 至今 (杭州米雅信息科技有限公司)
+我从事公司 ToB 端[米雅支持 APP ](https://itunes.apple.com/cn/app/%E7%B1%B3%E9%9B%85%E6%94%AF%E6%8C%81/id1341532078?mt=8) 的开发。该产品主要是通过对交易数据的各种维度分析( GMV、客单价、交易笔数、新老顾客、支付通道、客层等)，配合丰富的图表(折线图、柱状图、饼图)向客户和公司内部展示数据，从而达到直观的了解交易走势和问题分析。我主要从事的工作如下：
+- 利用 Weex 快速搭建一个跨平台项目，完成 iOS 和 Android 上米雅支持 APP 的快速上线；
+- 寻找适合跨端的图表框架，一开始选择，由 native 提供图表组件给 WEEX 使用，后期发现 native 提供的组件丰富性不足，和维护成本太高；后来，就寻找替换方案，使用了 echarts + webView 的形式来展示图表。主要的思想是将 echarts 和适配好的 html 文件利用 webpack 进行编译打包，然后缓存到本地，在 APP 里直接加载本地的 html 并结合对应的参数进行展示。
 
 ## 我的技能：
-- Objective-C
-	- 比较了解GCD、NSOperation的基本思想和使用
-	- 了解runtime的基本知识，其动态化过程，并使用runtime实现过项目中的AOP埋点
-	- 对面向协议和工厂模式有基本的理解和使用，对设计模式看法是：适合当前业务的就是最好的
-	- 阅读过AFNetWorking、weex的部分源码
-
-
--  H5 + WEEX + Vue
-	- 对web的html、CSS、JavaScript，基本了解，并能够实际运用，使用H5开发过公司的[手机主页](https://www.toomao.com)
-	- 熟悉使用weex进行项目开发。已经上线纯weex的商业级项目 土冒APP。对weex的使用态度：建议局部动态页面使用weex来替换webViwe，从而增强交互体验。全部使用weex在Android上回出现很大性能问题：OOM、卡顿。
-	- 因为weex的开发需要，对Vue有一些入门的了解
-
-- Swift
-	- 学习完了《The Swift Programming Language》3.0.1版本内容，基本完成了swift3.0的入门,并且关注swift的动态,多次参与Swift GG线下沙龙，拥抱RxSwift.
-- 英语(CET-4),习惯于google、stackoverflow、raywenderlick、自带梯子；阅读过《iOS Apprentice》部分章节的英文书籍， 
+ Objective-C | H5 + Weex + Vue | Swift |
+| :------| ------: | :------: |
 
 
 
 
 ## 作品展示和开源项目
 ### 作品展示
-- [土冒](https://itunes.apple.com/cn/app/tu-mao-jin-kou-ling-shi-%20gou/id965720144?mt=8)
-- [土冒手机web主页](https://www.toomao.com) 手机端H5
-- [GitHub](https://github.com/emptywalker)
+ [土冒](https://itunes.apple.com/cn/app/tu-mao-jin-kou-ling-shi-%20gou/id965720144?mt=8) | [土冒手机web主页](https://www.toomao.com) | [GitHub](https://github.com/emptywalker) |
+| :------| ------: | :------: |
 
-### 开源项目
- - [weex 实现一个采购系统](https://github.com/emptywalker/PurchasingPlatform)  局部功能
- - 对weex项目提交过关于导航控制器的[PR](https://github.com/apache/incubator-weex/pull/267)
+
+### 参与开源项目
+ - [Weex](https://github.com/apache/incubator-weex/commits?author=emptywalker)
  
 ---
 
