@@ -6,15 +6,13 @@
 ---
 ## 基本信息
 
-
+ 姓名：  | Email： | 电话：|
+| :------:| :------: | :------: |
+| 许有红| emptywalker@163.com | 18226987542 |
 
  毕业院校：  | 毕业时间： | 学历：| 其它 |
 | :------:| :------: | :------: | :-----: |
 | 池州学院| 2015-05 | 本科 | [Github]( https://github.com/emptywalker )、[博客](https://emptywalker.github.io)、 [简书](http://www.jianshu.com/users/14857ca34ed8/latest_articles) |
-
- 姓名：  | Email： | 电话：|
-| :------:| :------: | :------: | :------: |  :------: |
-| 许有红| emptywalker@163.com | 18226987542 | 池州学院（2015-05） |  本科 |
 
 ---
 
